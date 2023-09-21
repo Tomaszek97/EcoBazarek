@@ -1,0 +1,24 @@
+<footer class="footer">
+    <img src="assets/images/evelop.png" alt="Evelop" class="evelop-img">
+    <h3 class="subscribe-title">SUBSKRYBUJ</h3>
+    <p class="subscribe-description">Bądź pierwszym, który się dowie o naszych nowych produktach</p>
+    <div class="subscribe-input-group">
+        <input #emailInput name="email" type="text" placeholder="Twój email" class="subscribe-input">
+        <button class="subscribe-button" (click)="onSubscribe(emailInput)">Subskrybuj</button>
+        <p *ngIf="message">{{ message }}</p>
+    </div>
+    <div class="footer-icons">
+        <i class="fa-brands fa-facebook icon-style"></i>
+        <i class="fa-brands fa-instagram icon-style"></i>
+        <i class="fa-brands fa-linkedin icon-style"></i>
+        <i class="fa-brands fa-twitter icon-style"></i>
+        <i class="fa-brands fa-youtube icon-style"></i>
+    </div>
+    <div class="footer-links">
+        <a href="#">O nas</a>
+        <a href="#">Produkty</a>
+        <a href="#">Kontakt</a>
+        <a href="#">Warunki Użytkownika</a>
+        <a href="#">Polityka prywatności</a>
+    </div>
+</footer>

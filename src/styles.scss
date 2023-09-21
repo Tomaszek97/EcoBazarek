@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+
+body {
+  background-color: #F6F5F1;
+  height: 100vh;
+}
+.navbar {
+  font-size: 16px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.icon-style {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  margin-left: 20px;
+  color: white;
+}
+
+

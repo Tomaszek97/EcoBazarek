@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>PRODUKTY</h1>
+    <div class="content">
+        <div class="filters">
+            <div class="types">
+                <h6>Typ</h6>
+                <label><input type="checkbox" value="owoce"> Owoce</label>
+                <label><input type="checkbox" value="warzywa"> Warzywa</label>
+                <label><input type="checkbox" value="wołowina"> Wołowina</label>
+                <label><input type="checkbox" value="wieprzowina"> Wieprzowina</label>
+                <label><input type="checkbox" value="mleko i przetwory"> Mleko i przetwory</label>
+                <label><input type="checkbox" value="zboża"> Zboża</label>
+            </div>
+            <div class="categories">
+                <h6>Kategorie</h6>
+                <label><input type="checkbox" value="kategoriaA"> Kategoria A</label>
+                <label><input type="checkbox" value="kategoriaB"> Kategoria B</label>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product-item" *ngFor="let product of products">
+                <h5>{{ product.name }}</h5>
+                <p>{{ product.desc }}</p>
+                <p>Cena: {{ product.price }}</p>
+                <p>Typ: {{ product.type }}</p>
+                <p>Kategoria: {{ product.category }}</p>
+                <p>Jednostka: {{ product.unit }}</p>
+            </div>
+        </div>
+    </div>
+</div>
